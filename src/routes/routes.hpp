@@ -6,5 +6,4 @@
 */
 
 extern void test();
-extern void test2();
 #endif
