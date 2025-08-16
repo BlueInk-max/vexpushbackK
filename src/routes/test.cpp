@@ -9,7 +9,12 @@
 void test() {
     // declare initial conditions
     PIDDataSet TestPara={4,0.1,0.2};
-    MoveEncoderPID(TestPara, 100, 10, 0.4, 0, true);
+    MoveEncoderPID(TestPara, 100, 100, 0.4, 0, true);
     TurnMaxTimePID(TestPara, -90, 0.4, true);
     MoveEncoderPID(TestPara, 100, 10, 0.4, -90, true);
+    TurnMaxTimepID(TestPara,-180, 0.4, true);
+    MoveEncoderPID(TestPara, 100, 100, 0.4, -180, true);
+    TurnMaxTimePID(TestPara, 90, 0.4, true);
+    MoveEncoderPID(TestPara, 100, 10, 0.4, 90, true);
+    TurnMaxTimePID(TestPara, 0, 0.4, true);
 }
