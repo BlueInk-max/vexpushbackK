@@ -9,9 +9,9 @@ brain  Brain;
 
 // VEXcode device constructors
 controller Controller1 = controller(primary);
-motor LF = motor(PORT11, ratio6_1, false);
-motor LM = motor(PORT15, ratio6_1, true);
-motor LB = motor(PORT1, ratio6_1, true);
+motor LF = motor(PORT13, ratio6_1, false);
+motor LM = motor(PORT14, ratio6_1, true);
+motor LB = motor(PORT19, ratio6_1, true);
 motor RF = motor(PORT11, ratio6_1, true);
 motor RM = motor(PORT17, ratio6_1, false);
 motor RB = motor(PORT12, ratio6_1, false);
@@ -19,7 +19,7 @@ motor Roller = motor(PORT20, ratio6_1, true);
 digital_out Pistake = digital_out(Brain.ThreeWirePort.D);
 digital_out Tilt = digital_out(Brain.ThreeWirePort.B);
 digital_out Clamp = digital_out(Brain.ThreeWirePort.A);
-inertial Gyro = inertial(PORT2);
+inertial Gyro = inertial(PORT18);
 //Naming convention: 
 // Important variables
 const double wheelDiam = 2.75;
